@@ -1,0 +1,67 @@
+.header__top{
+    display: flex;
+    .top__left{
+        
+        img{
+            width: 43px;
+        }
+    }
+}
+.nav__content{
+    #tab__content1{
+        .nav-tabs{
+            justify-content: center;
+            li{
+                
+                padding: 25px 10px;
+                a{
+                    text-decoration: none;
+                }
+            }
+            .tab__name.active{
+                border-bottom: 5px solid #102b4e;
+            }
+        }
+    }
+    .tab-content {
+    padding-left: 25px;
+    padding-right: 25px;
+    .tab-pane {
+        .tab1__content {
+            padding: 25px 20px;
+            width: 180px;
+            min-height: 245px;
+            color: #0276b3;
+            line-height: 20px;
+            text-align: center;
+
+            img {
+                width: 100%;
+            }
+
+            .car__name {
+                font-size: 16px;
+                color: #0276b3;
+                text-transform: uppercase;
+                line-height: 1.9rem;
+                margin: 10px 0 2px;
+            }
+
+            .car__price {
+                font-size: 14px;
+                color: #555;
+
+                span {}
+            }
+        }
+    }
+    .tab-pane.active {
+        display: grid;
+        grid-template-columns: repeat(6,1fr); 
+        a{
+            text-decoration: none;
+        }
+    }
+}
+}
+

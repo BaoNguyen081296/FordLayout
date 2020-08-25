@@ -1,0 +1,70 @@
+.searchForm {
+    background-color: #333333;
+    padding: 50px 95px 50px;
+    width: 100%;
+    margin: auto;
+    height: 100%;
+    .searchForm__content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .searchForm__form {
+            form {
+                a {
+                    height: 100%;
+                    cursor: default;
+                    span {
+                        @include styleText($color-white-0, $fs-2, $fw-normal);
+                    }
+                }
+                input {
+                    color: white;
+                    margin: 0;
+                    background-color: #333333;
+                    padding: 0px 10px;
+                    border-radius: 0px;
+                    transition: none;
+                    border-color: transparent;
+                    border: none;
+                    @include styleText($color-white-0, $fs-2, $fw-normal);
+                    &::placeholder {
+                        @include styleText($color-white-0, $fs-2, $fw-normal);
+                    }
+                    &:focus {
+                        @include styleText($color-white-0, $fs-2, $fw-normal);
+                        box-shadow: none;
+                        border-color: none !important;
+                        border: none !important;
+                        outline: none;
+                    }
+                }
+            }
+        }
+        .searchForm__item {
+            display: flex;
+           
+            // align-items: center;
+           span{
+            padding-right: 10px;
+            @include styleText($color-white-0,$fs-0,$fw-bold)
+           }
+            ul {
+                margin:0;
+                display: inline;
+                list-style: none;
+                display: flex;
+                li {
+                    padding: 0px 5px;
+                    a{
+                        @include styleText(#a7a7a7,$fs-0,$fw-normal);
+                        &:hover{
+                            text-decoration-line: none;
+                            @include styleText($color-white-0,$fs-0,$fw-normal);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+

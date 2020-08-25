@@ -1,0 +1,25 @@
+.ford-btnBlue{
+    @include styleButton($color-blue,$color-gray-2,$pd-1 + 5, $pd-1 + 5);
+    @include styleText($color-white-0,$fs-0 + 1,$fw-normal);
+    text-align:center;
+    &:hover{
+        text-decoration: none;
+        @include styeHoverButton($color-white-0,$color-black-btn-0,$color-black-btn-0);
+    }
+}
+.ford-btnRed{
+    @include styleButton($color-red-0,$color-red-0,$pd-1 + 5, $pd-1 + 5);
+    @include styleText($color-white-0,$fs-0 + 1,$fw-normal);
+    text-align:center;
+    &:hover{
+        @include styeHoverButton($color-white-0,$color-red-0,$color-red-0);
+    }
+}
+.ford-btnWhite{
+    @include styleButton($color-white-0,$color-blue,$pd-1 + 5, $pd-1 + 5);
+    @include styleText($color-blue,$fs-0 + 1,$fw-normal);
+    text-align:center;
+    &:hover{
+        @include styeHoverButton($color-white-0,$color-black-btn-0,$color-black-btn-0);
+    }
+}

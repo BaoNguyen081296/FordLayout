@@ -1,0 +1,29 @@
+@mixin styleText($color, $fs, $fw) {
+    font-size: $fs;
+    color: $color;
+    font-weight: $fw;
+}
+
+@mixin styleButton($bg-color, $border, $pd-y, $pd-x) {
+    border: 1px solid $border;
+    background-color: $bg-color;
+    padding: $pd-y $pd-x;
+}
+
+@mixin styeHoverButton($bg-color, $color, $border) {
+    border-color: $border;
+    background-color: $bg-color;
+    color: $color;
+}
+
+@mixin  responsive ($screen) {
+    @if (map-has-key($map:$breakpoints , $key:$screen )){
+        $value: map-get($map:$breakpoints, $key:$screen);
+        @media screen and (max-width: $value){
+            @content;
+        }
+    } @else {
+        //không tìm thấy
+        @warn 'Giá trị không tồn tại';
+    }
+}

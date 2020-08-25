@@ -1,0 +1,94 @@
+$clr-gray-1: rgb(85, 85, 85);
+$clr-gray-2: rgb(77, 77, 77);
+$clr-gray-3: rgb(119, 119, 119);
+$clr-gray-4: rgb(66, 89, 104);
+$clr-gray-5: rgb(153, 153, 153);
+$clr-gray-6: rgb(167, 167, 167);
+$clr-gray-7: rgb(98, 100, 102);
+$clr-gray-8: rgba(85, 85, 85, 0.8);
+$clr-gray-9: rgb(86, 86, 86);
+$clr-gray-10: rgb(105, 105, 105);
+$clr-gray-11: rgb(110, 130, 144);
+
+
+$clr-yeallow-0: rgb(240, 181, 55);
+$clr-yeallow-1: rgb(224, 135, 0);
+
+$clr-red-0: rgb(217, 46, 20);
+$clr-red-1: rgb(185, 74, 72);
+
+
+$clr-blue-0: rgb(2, 118, 179);
+$clr-blue-1: rgb(55, 169, 232);
+$clr-blue-2: rgb(16, 43, 78);
+$clr-blue-3: rgb(32, 150, 205);
+$clr-blue-4: rgb(27, 57, 78);
+$clr-blue-5: rgb(45, 116, 178);
+$clr-blue-6: rgb(9, 42, 70); 
+$clr-blue-7: rgb(26, 115, 232);
+$clr-blue-8: rgba(6, 120, 188, 0.75);
+
+$clr-green-0: rgb(88, 245, 120);
+
+
+
+// variable color
+$color-black-0: #29303b; // default
+$color-white-0: #fff; //default
+$color-red-0:rgb(217, 46, 20);
+$color-red-1: #521822;
+$color-purple: #6e1a52;
+$color-gray-1: rgba(20,23,28,.05);
+$color-gray-2: #a1a7b3;
+$color-gray-3: #cacbcc;
+$color-gray-4: #686f7a;
+$color-gray-5:#F7F7F7;
+$color-gray-6:#dedfe0;
+$color-black-light:#505763;
+$color-white-cream:#f2f3f5;
+$color-black-dark: rgba(20,23,28,.1);
+$color-yellow: #F4C150;
+$color-blue:#0276b3;
+$color-black-btn-0: #102b4e;
+
+
+// variable font-size
+$fs-0: 15px; //default
+$fs-1: 13px;
+$fs-2: 20px;
+$fs-3: 24px;
+//Còn 1 font-size: 36px;
+$fs-4: 40px;
+
+//variable margin
+$mg-0: 2px;
+$mg-1: 10px;
+$mg-2: 25px;
+
+//variable border-radius
+$border-radius: 2px;
+
+//variable padding
+$pd-0: 5px; //default
+$pd-1: 10px;
+$pd-2: 20px;
+
+
+//variable line-height
+$line-height-0: 1.43; //default
+
+
+//variable font-weight
+$fw-normal: normal;
+$fw-bold-0: 600;
+$fw-bold-1: 700;
+$fw-bold: bold;
+
+
+//break points
+$breakpoints:(
+    'extra-large': 1200px,
+    'large' : 992px,
+    'medium' : 768px,
+    'small' : 576px,
+)

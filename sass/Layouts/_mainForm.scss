@@ -1,0 +1,44 @@
+.mainForm{
+    background-color: #242424;
+    padding: 50px 95px 50px;
+    width: 100%;
+    margin: auto;
+    height: 100%;
+    .mainForm__content{
+        .row{
+            margin:0;
+            
+            justify-content: space-between;
+           .mainForm__text{
+               padding-left: 0px;
+            .mainForm__ul{
+                list-style: none;
+                .main__listHeading{
+                   
+                    padding:25px 18px 25px 0px;
+                    h6{ cursor:default ;
+                        display: inline;
+                        @include styleText($color-white-0,$fs-0 + 1, $fw-normal);
+                    }
+                }
+                .mainForm__ul2{
+                    list-style: none;
+                    li{
+                        padding: 3px 0px 5px 0px;
+                        a{
+                            @include styleText(#a7a7a7,$fs-0,$fw-normal);
+                            &:hover{
+                                text-decoration-line: none;
+                                color: $color-white-0;
+                            }
+                        }
+                    }
+                }
+                
+            }
+           }
+        }
+        
+       
+    }
+}

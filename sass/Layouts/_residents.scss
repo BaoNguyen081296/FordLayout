@@ -1,0 +1,36 @@
+.residents{
+    background-color: $color-black-btn-0;
+    text-align: center;
+    padding-top: 20px;
+    .residents__content{
+        h2{
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            @include styleText($color-white-0,$fs-4 + 2, $fw-normal);
+        }
+        .residents__text{
+            p{
+                margin:0 auto;
+                @include styleText ($color-white-0,$fs-0 + 1,$fw-normal );
+                    line-height: 1.5;
+                a{
+                    text-decoration: underline;
+                    color: $clr-blue-1;
+                    span{
+
+                    }
+                }
+            }
+        }
+        .resident__button{
+            padding-bottom: 3rem;
+            padding-top: 2rem;
+            a{
+                span{
+    
+                }
+            }
+        }
+        
+    }
+}

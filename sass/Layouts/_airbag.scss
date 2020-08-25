@@ -1,0 +1,20 @@
+.airbag {
+    .airbag__content {
+        padding-bottom: 80px;
+        padding-top: 20px;
+        background-color: $color-gray-5;
+        text-align: center;
+        .ford-btnRed {
+            padding: 15px 20px;
+            width: 270px;
+            min-height: 50px;
+            line-height: 1.25;
+            margin-top: 20px;
+        }
+        h2 {
+            @include styleText($color-red-0, 50px, $fw-normal);
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+        }
+    }
+}

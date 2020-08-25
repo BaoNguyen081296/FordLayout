@@ -1,0 +1,28 @@
+.summer{
+    
+    .summer__content{
+        background-image: url(../../images/summerSale.webp);
+        height: 400px;
+        background-repeat: no-repeat;
+        background-size:cover;
+        background-position: center center;
+        position: relative;
+        text-align: center;
+        .summer__text{
+            position: absolute;
+            bottom: 50px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .summer__banner{
+            height: 400px;
+            width: 94%;
+            background-color: $color-yellow;
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: transparent;
+        }
+    }
+}

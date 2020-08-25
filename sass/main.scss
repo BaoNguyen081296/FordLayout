@@ -1,0 +1,22 @@
+//Base
+@import './Base/reset';
+
+//Helper
+@import './Helper/variables';
+@import './Helper/mixin';
+//Components
+@import './Components/button';
+
+//Layouts
+
+@import "./Layouts/genaralImage";
+@import "./Layouts/gallery";
+@import "./Layouts/summer";
+@import './Layouts/airbag';
+@import './Layouts/disclosures';
+@import './Layouts/residents';
+@import './Layouts/header';
+@import './Layouts/formSeach';
+@import './Layouts/mainForm';
+@import './Layouts/follow';
+@import './Layouts/footer';
