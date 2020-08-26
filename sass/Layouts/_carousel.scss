@@ -1,0 +1,40 @@
+.carousel{
+    padding-top: 128px;
+    .header__black{
+    padding: 10px 0;
+    background-color: $clr-black-0;
+    color: $clr-white-0;
+    font-size: 16px;
+    text-align: center;
+    .text__content{
+        margin-bottom: 25px;
+        p{
+            margin: 0;
+            
+        }
+    }
+    .link__content{
+        a{
+            margin-right: 19px;
+            span{
+                text-decoration: underline;
+                color: #37A9E8;
+            }
+        }
+    }
+}
+    .carousel__content{
+        
+        .swiper__item{
+            position: relative;
+            img{
+                width: 100%;
+            }
+            .items__inside{
+                position: absolute;
+                top:5%;
+                left: 5%;
+            }
+        }
+    }
+}

@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <title>Ford</title>
 
+       <!--   SwiperJS-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <!-- BS4 CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
@@ -35,731 +37,100 @@
             </div>
         </div>
         <div class="nav__content">
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <a class="navbar-brand" href="#">Navbar</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse"
-                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                    aria-label="Toggle navigation">
+            <nav class="navbar navbar-expand-md navbar-light">
+                <a class="navbar-brand" href="#"><img class="nav__logo" src="./images/Blue_Oval_448x252.jpg" alt=""></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mr-auto">
-                        <li class="nav-item active">
-                            <a id="nav__1" class="nav-link" href="#tab__content1">Vehicles</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Shop</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Finance</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Owner</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Ask Ford</a>
-                        </li>
-                    </ul>
+                <div class="nav__cols">
+                    <div class="collapse navbar-collapse col-md-7
+                col__left" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item active">
+                                <a id="nav__1" class="nav-link" href="" data-toggle="modal" data-target="#myModal" >Vehicles</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="" data-toggle="modal" data-target="#myModalShop">Shop</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Finance</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Owner</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link ask__Ford" href="#">Ask Ford</a>
+                            </li>
+                            <li class="nav-item ask__Icon">
+                                <i class="fa fa-question-circle"></i>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col__right col-md-4">
+                        <div class="right__items" id="right__items">
+                            <a>
+                                <i class="fa fa-user-circle"></i>
+                                <span>Sign in</span>
+                            </a>
+                            <a>
+                                <i class="fa fa-search"></i>
+                            </a>
+                            <a>
+                                <i class="fa fa-globe-asia"></i>
+                                <span>English</span>
+                            </a>
+                        </div>
+
+                    </div>
                 </div>
             </nav>
-            <div class="tabbable" id="tab__content1">
-                <!-- Only required for left/right tabs -->
-                <ul class="nav nav-tabs">
-                    <li class="active"><a href="#tab1" data-toggle="tab">SUVs & Crossovers</a></li>
-                    <li><a href="#tab2" data-toggle="tab">Trucks & Vans</a></li>
-                    <li><a href="#tab3" data-toggle="tab">Cars</a></li>
-                    <li><a href="#tab4" data-toggle="tab">Electrics</a></li>
-                    <li><a href="#tab5" data-toggle="tab">Commercial Vehicles</a></li>
-                    <li><a href="#tab6" data-toggle="tab">Performance Vehicles</a></li>
-                    <li><a href="#tab7" data-toggle="tab">Future Vehicles</a></li>
-                </ul>
-                <div class="tab-content">
-                    <div class="tab-pane active" id="tab1">
-                        <a href="#" class="tab1__link">
-                            <div class="tab1__content">
-                                <div class="tab1__img">
-                                    <img src="./images/cq5dam.web.1280.1280.webp" alt="">
-                                </div>
-                                <div class="tab1__infor">
-                                    <h3 class="car__name">
-                                        2020 ECOSPORT
-                                    </h3>
-                                    <p class="car__price">
-                                        Starting at $19,995<span>1</span>
-                                    </p>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="#" class="tab1__link">
-                            <div class="tab1__content">
-                                <div class="tab1__img">
-                                    <img src="./images/cq5dam.web.1280.1280%20(1).webp" alt="">
-                                </div>
-                                <div class="tab1__infor">
-                                    <h3 class="car__name">
-                                        2020 ESCAPE
-                                    </h3>
-                                    <p class="car__price">
-                                        Starting at $24,885<span>1</span>
-                                    </p>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="#" class="tab1__link">
-                            <div class="tab1__content">
-                                <div class="tab1__img">
-                                    <img src="./images/cq5dam.web.1280.1280%20(2).webp" alt="">
-                                </div>
-                                <div class="tab1__infor">
-                                    <h3 class="car__name">
-                                        2021 BRONCO SPORT
-                                    </h3>
-                                    <p class="car__price">
-                                        Starting at $26,660<span>1</span>
-                                    </p>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="#" class="tab1__link">
-                            <div class="tab1__content">
-                                <div class="tab1__img">
-                                    <img src="./images/cq5dam.web.1280.1280%20(3).webp" alt="">
-                                </div>
-                                <div class="tab1__infor">
-                                    <h3 class="car__name">
-                                        2021 BRONCO
-                                    </h3>
-                                    <p class="car__price">
-                                        Starting at $28,500<span>1</span>
-                                    </p>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="#" class="tab1__link">
-                            <div class="tab1__content">
-                                <div class="tab1__img">
-                                    <img src="./images/cq5dam.web.1280.1280%20(4).webp" alt="">
-                                </div>
-                                <div class="tab1__infor">
-                                    <h3 class="car__name">
-                                        2019 FLEX
-                                    </h3>
-                                    <p class="car__price">
-                                        Starting at $30,575<span>1</span>
-                                    </p>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="#" class="tab1__link">
-                            <div class="tab1__content">
-                                <div class="tab1__img">
-                                    <img src="./images/cq5dam.web.1280.1280%20(5).webp" alt="">
-                                </div>
-                                <div class="tab1__infor">
-                                    <h3 class="car__name">
-                                        2020 EDGE
-                                    </h3>
-                                    <p class="car__price">
-                                        Starting at $31,100<span>1</span>
-                                    </p>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="#" class="tab1__link">
-                            <div class="tab1__content">
-                                <div class="tab1__img">
-                                    <img src="./images/cq5dam.web.1280.1280%20(6).webp" alt="">
-                                </div>
-                                <div class="tab1__infor">
-                                    <h3 class="car__name">
-                                        2020 EXPLOREr
-                                    </h3>
-                                    <p class="car__price">
-                                        Starting at $32,765<span>1</span>
-                                    </p>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="#" class="tab1__link">
-                            <div class="tab1__content">
-                                <div class="tab1__img">
-                                    <img src="./images/cq5dam.web.1280.1280%20(7).webp" alt="">
-                                </div>
-                                <div class="tab1__infor">
-                                    <h3 class="car__name">
-                                        2021 MUSTANG MACH-E
-                                    </h3>
-                                    <p class="car__price">
-                                        Starting at $43,895<span>1</span>
-                                    </p>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="#" class="tab1__link">
-                            <div class="tab1__content">
-                                <div class="tab1__img">
-                                    <img src="./images/cq5dam.web.1280.1280%20(8).webp" alt="">
-                                </div>
-                                <div class="tab1__infor">
-                                    <h3 class="car__name">
-                                        2020 EXPEDITION
-                                    </h3>
-                                    <p class="car__price">
-                                        Starting at $52,810<span>1</span>
-                                    </p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="tab-pane" id="tab2">
-                        <a href="#" class="tab1__link">
-                            <div class="tab1__content">
-                                <div class="tab1__img">
-                                    <img src="./images/cq5dam.web.1280.1280%20(10).webp" alt="">
-                                </div>
-                                <div class="tab1__infor">
-                                    <h3 class="car__name">
-                                        2020 RANGER
-                                    </h3>
-                                    <p class="car__price">
-                                        Starting at $24,410<span>1</span>
-                                    </p>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="#" class="tab1__link">
-                            <div class="tab1__content">
-                                <div class="tab1__img">
-                                    <img src="./images/cq5dam.web.1280.1280%20(9).webp" alt="">
-                                </div>
-                                <div class="tab1__infor">
-                                    <h3 class="car__name">
-                                        2020 TRANSIT CONNECT
-                                    </h3>
-                                    <p class="car__price">
-                                        Starting at $27,020<span>1</span>
-                                    </p>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="#" class="tab1__link">
-                            <div class="tab1__content">
-                                <div class="tab1__img">
-                                    <img src="./images/cq5dam.web.1280.1280%20(10).webp" alt="">
-                                </div>
-                                <div class="tab1__infor">
-                                    <h3 class="car__name">
-                                        2020 F-150
-                                    </h3>
-                                    <p class="car__price">
-                                        Starting at $28,745<span>1</span>
-                                    </p>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="#" class="tab1__link">
-                            <div class="tab1__content">
-                                <div class="tab1__img">
-                                    <img src="./images/cq5dam.web.1280.1280%20(11).webp" alt="">
-                                </div>
-                                <div class="tab1__infor">
-                                    <h3 class="car__name">
-                                        2020 SUPER DUTY
-                                    </h3>
-                                    <p class="car__price">
-                                        Starting at $34,035<span>1</span>
-                                    </p>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="#" class="tab1__link">
-                            <div class="tab1__content">
-                                <div class="tab1__img">
-                                    <img src="./images/cq5dam.web.1280.1280%20(12).webp" alt="">
-                                </div>
-                                <div class="tab1__infor">
-                                    <h3 class="car__name">
-                                        2020 TRANSIT
-                                    </h3>
-                                    <p class="car__price">
-                                        Starting at $40,180<span>1</span>
-                                    </p>
-                                </div>
-                            </div>
-                        </a>
-
-                    </div>
-                    <div class="tab-pane" id="tab3">
-                        <a href="#" class="tab1__link">
-                            <div class="tab1__content">
-                                <div class="tab1__img">
-                                    <img src="./images/cq5dam.web.1280.1280%20(13).webp" alt="">
-                                </div>
-                                <div class="tab1__infor">
-                                    <h3 class="car__name">
-                                        2020 FUSION
-                                    </h3>
-                                    <p class="car__price">
-                                        Starting at $23,170<span>1</span>
-                                    </p>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="#" class="tab1__link">
-                            <div class="tab1__content">
-                                <div class="tab1__img">
-                                    <img src="./images/cq5dam.web.1280.1280%20(14).webp" alt="">
-                                </div>
-                                <div class="tab1__infor">
-                                    <h3 class="car__name">
-                                        2020 MUSTANG
-                                    </h3>
-                                    <p class="car__price">
-                                        Starting at $26,670<span>1</span>
-                                    </p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="tab-pane" id="tab4">
-                        <a href="#" class="tab1__link">
-                            <div class="tab1__content">
-                                <div class="tab1__img">
-                                    <img src="./images/cq5dam.web.1280.1280%20(7).webp" alt="">
-                                </div>
-                                <div class="tab1__infor">
-                                    <h3 class="car__name">
-                                        2021 MUSTANG MACH-E
-                                    </h3>
-                                    <p class="car__price">
-                                        Starting at $43,890<span>1</span>
-                                    </p>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="#" class="tab1__link">
-                            <div class="tab1__content">
-                                <div class="tab1__img">
-                                    <img src="./images/cq5dam.web.1280.1280%20(15).webp" alt="">
-                                </div>
-                                <div class="tab1__infor">
-                                    <h3 class="car__name">
-                                        2020 FUSION HYBRID
-                                    </h3>
-                                    <p class="car__price">
-                                        Starting at $28,000<span>1</span>
-                                    </p>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="#" class="tab1__link">
-                            <div class="tab1__content">
-                                <div class="tab1__img">
-                                    <img src="./images/cq5dam.web.1280.1280%20(16).webp" alt="">
-                                </div>
-                                <div class="tab1__infor">
-                                    <h3 class="car__name">
-                                        2020 FUSION PLUG-IN HYBRID
-                                    </h3>
-                                    <p class="car__price">
-                                        Starting at $35,005<span>1</span>
-                                    </p>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="#" class="tab1__link">
-                            <div class="tab1__content">
-                                <div class="tab1__img">
-                                    <img src="./images/cq5dam.web.1280.1280%20(17).webp" alt="">
-                                </div>
-                                <div class="tab1__infor">
-                                    <h3 class="car__name">
-                                        2020 EXPLORER LIMITED
-                                    </h3>
-                                    <p class="car__price">
-                                        Starting at $48,385<span>1</span>
-                                    </p>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="#" class="tab1__link">
-                            <div class="tab1__content">
-                                <div class="tab1__img">
-                                    <img src="./images/cq5dam.web.1280.1280%20(18).webp" alt="">
-                                </div>
-                                <div class="tab1__infor">
-                                    <h3 class="car__name">
-                                        2020 ESCAPE SE SPORT HYBRID
-                                    </h3>
-                                    <p class="car__price">
-                                        Starting at $28,260<span>1</span>
-                                    </p>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="#" class="tab1__link">
-                            <div class="tab1__content">
-                                <div class="tab1__img">
-                                    <img src="./images/cq5dam.web.1280.1280%20(18).webp" alt="">
-                                </div>
-                                <div class="tab1__infor">
-                                    <h3 class="car__name">
-                                        2020 FORD ESCAPE SE PLUG-IN HYBRID
-                                    </h3>
-                                    <p class="car__price">
-                                        Starting at $33,040<span>1</span>
-                                    </p>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="#" class="tab1__link">
-                            <div class="tab1__content">
-                                <div class="tab1__img">
-                                    <img src="./images/cq5dam.web.1280.1280%20(19).webp" alt="">
-                                </div>
-                                <div class="tab1__infor">
-                                    <h3 class="car__name">
-                                        2020 ESCAPE SEL PLUG-IN HYBRID
-                                    </h3>
-                                    <p class="car__price">
-                                        Starting at $35,620<span>1</span>
-                                    </p>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="#" class="tab1__link">
-                            <div class="tab1__content">
-                                <div class="tab1__img">
-                                    <img src="./images/cq5dam.web.1280.1280%20(21).webp" alt="">
-                                </div>
-                                <div class="tab1__infor">
-                                    <h3 class="car__name">
-                                        2020 ESCAPE TITANIUM HYBRID
-                                    </h3>
-                                    <p class="car__price">
-                                        Starting at $33,550<span>1</span>
-                                    </p>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="#" class="tab1__link">
-                            <div class="tab1__content">
-                                <div class="tab1__img">
-                                    <img src="./images/cq5dam.web.1280.1280%20(22).webp" alt="">
-                                </div>
-                                <div class="tab1__infor">
-                                    <h3 class="car__name">
-                                        2020 ESCAPE TITANIUM PLUG-IN HYBRID
-                                    </h3>
-                                    <p class="car__price">
-                                        Starting at $38,830<span>1</span>
-                                    </p>
-                                </div>
-                            </div>
-                        </a>
-
-                    </div>
-                    <div class="tab-pane" id="tab5">
-                        <a href="#" class="tab1__link">
-                            <div class="tab1__content">
-                                <div class="tab1__img">
-                                    <img src="./images/cq5dam.web.1280.1280%20(23).webp" alt="">
-                                </div>
-                                <div class="tab1__infor">
-                                    <h3 class="car__name">
-                                        2020 TRANSIT CONNECT
-                                    </h3>
-                                    <p class="car__price">
-                                        Starting at $24,410<span>1</span>
-                                    </p>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="#" class="tab1__link">
-                            <div class="tab1__content">
-                                <div class="tab1__img">
-                                    <img src="./images/cq5dam.web.1280.1280%20(24).webp" alt="">
-                                </div>
-                                <div class="tab1__infor">
-                                    <h3 class="car__name">
-                                        2020-2021 STRIPPED CHASSIS
-                                    </h3>
-                                    <p class="car__price">
-                                        Starting at $27,020<span>1</span>
-                                    </p>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="#" class="tab1__link">
-                            <div class="tab1__content">
-                                <div class="tab1__img">
-                                    <img src="./images/cq5dam.web.1280.1280%20(25).webp" alt="">
-                                </div>
-                                <div class="tab1__infor">
-                                    <h3 class="car__name">
-                                        2020 TRANSIT CC-CA
-                                    </h3>
-                                    <p class="car__price">
-                                        Starting at $28,745<span>1</span>
-                                    </p>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="#" class="tab1__link">
-                            <div class="tab1__content">
-                                <div class="tab1__img">
-                                    <img src="./images/cq5dam.web.1280.1280%20(26).webp" alt="">
-                                </div>
-                                <div class="tab1__infor">
-                                    <h3 class="car__name">
-                                        2021 E-SERIES CUTAWAY
-                                    </h3>
-                                    <p class="car__price">
-                                        Starting at $34,035<span>1</span>
-                                    </p>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="#" class="tab1__link">
-                            <div class="tab1__content">
-                                <div class="tab1__img">
-                                    <img src="./images/cq5dam.web.1280.1280%20(27).webp" alt="">
-                                </div>
-                                <div class="tab1__infor">
-                                    <h3 class="car__name">
-                                        2020 SUPER DUTY
-                                    </h3>
-                                    <p class="car__price">
-                                        Starting at $40,180<span>1</span>
-                                    </p>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="#" class="tab1__link">
-                            <div class="tab1__content">
-                                <div class="tab1__img">
-                                    <img src="./images/cq5dam.web.1280.1280%20(28).webp" alt="">
-                                </div>
-                                <div class="tab1__infor">
-                                    <h3 class="car__name">
-                                        2020 TRANSIT
-                                    </h3>
-                                    <p class="car__price">
-                                        Starting at $40,180<span>1</span>
-                                    </p>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="#" class="tab1__link">
-                            <div class="tab1__content">
-                                <div class="tab1__img">
-                                    <img src="./images/cq5dam.web.1280.1280%20(29).webp" alt="">
-                                </div>
-                                <div class="tab1__infor">
-                                    <h3 class="car__name">
-                                        2020 CHASSIS CAB
-                                    </h3>
-                                    <p class="car__price">
-                                        Starting at $40,180<span>1</span>
-                                    </p>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="#" class="tab1__link">
-                            <div class="tab1__content">
-                                <div class="tab1__img">
-                                    <img src="./images/cq5dam.web.1280.1280%20(30).webp" alt="">
-                                </div>
-                                <div class="tab1__infor">
-                                    <h3 class="car__name">
-                                        2021 F-650 F-750
-                                    </h3>
-                                    <p class="car__price">
-                                        Starting at $40,180<span>1</span>
-                                    </p>
-                                </div>
-                            </div>
-                        </a>
-
-                    </div>
-                    <div class="tab-pane" id="tab6">
-                        <a href="#" class="tab1__link">
-                            <div class="tab1__content">
-                                <div class="tab1__img">
-                                    <img src="./images/cq5dam.web.1280.1280%20(5).webp" alt="">
-                                </div>
-                                <div class="tab1__infor">
-                                    <h3 class="car__name">
-                                        2020 EDGE ST
-                                    </h3>
-                                    <p class="car__price">
-                                        Starting at $43,260<span>1</span>
-                                    </p>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="#" class="tab1__link">
-                            <div class="tab1__content">
-                                <div class="tab1__img">
-                                    <img src="./images/cq5dam.web.1280.1280%20(31).webp" alt="">
-                                </div>
-                                <div class="tab1__infor">
-                                    <h3 class="car__name">
-                                        2020 F-150 RAPTOR
-                                    </h3>
-                                    <p class="car__price">
-                                        Starting at $53,450<span>1</span>
-                                    </p>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="#" class="tab1__link">
-                            <div class="tab1__content">
-                                <div class="tab1__img">
-                                    <img src="./images/cq5dam.web.1280.1280%20(32).webp" alt="">
-                                </div>
-                                <div class="tab1__infor">
-                                    <h3 class="car__name">
-                                        FORD GT
-                                    </h3>
-                                    <p class="car__price">
-
-                                    </p>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="#" class="tab1__link">
-                            <div class="tab1__content">
-                                <div class="tab1__img">
-                                    <img src="./images/cq5dam.web.1280.1280%20(33).webp" alt="">
-                                </div>
-                                <div class="tab1__infor">
-                                    <h3 class="car__name">
-                                        FORD GT MK II
-                                    </h3>
-                                    <p class="car__price">
-
-                                    </p>
-                                </div>
-
-                            </div>
-                        </a>
-                        <a href="#" class="tab1__link">
-                            <div class="tab1__content">
-                                <div class="tab1__img">
-                                    <img src="./images/cq5dam.web.1280.1280%20(34).webp" alt="">
-                                </div>
-                                <div class="tab1__infor">
-                                    <h3 class="car__name">
-                                        2020 MUSTANG SHELBY GT350®
-                                    </h3>
-                                    <p class="car__price">
-                                        Starting at $60,440<span>1</span>
-                                    </p>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="#" class="tab1__link">
-                            <div class="tab1__content">
-                                <div class="tab1__img">
-                                    <img src="./images/cq5dam.web.1280.1280%20(35).webp" alt="">
-                                </div>
-                                <div class="tab1__infor">
-                                    <h3 class="car__name">
-                                        2020 MUSTANG SHELBY® GT500®
-                                    </h3>
-                                    <p class="car__price">
-                                        Starting at $72,900<span>1</span>
-                                    </p>
-                                </div>
-                            </div>
-                        </a>
-
-                    </div>
-                    <div class="tab-pane" id="tab7">
-                        <a href="#" class="tab1__link">
-                            <div class="tab1__content">
-                                <div class="tab1__img">
-                                    <img src="./images/cq5dam.web.1280.1280%20(2).webp" alt="">
-                                </div>
-                                <div class="tab1__infor">
-                                    <h3 class="car__name">
-                                        2021 BRONCO SPORT
-                                    </h3>
-                                    <p class="car__price">
-                                        Starting at $24,410<span>1</span>
-                                    </p>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="#" class="tab1__link">
-                            <div class="tab1__content">
-                                <div class="tab1__img">
-                                    <img src="./images/cq5dam.web.1280.1280%20(3).webp" alt="">
-                                </div>
-                                <div class="tab1__infor">
-                                    <h3 class="car__name">
-                                        2021 BRONCO
-                                    </h3>
-                                    <p class="car__price">
-                                        Starting at $27,020<span>1</span>
-                                    </p>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="#" class="tab1__link">
-                            <div class="tab1__content">
-                                <div class="tab1__img">
-                                    <img src="./images/cq5dam.web.1280.1280%20(7).webp" alt="">
-                                </div>
-                                <div class="tab1__infor">
-                                    <h3 class="car__name">
-                                        2021 MUSTANG MACH-E
-                                    </h3>
-                                    <p class="car__price">
-                                        Starting at $28,745<span>1</span>
-                                    </p>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="#" class="tab1__link">
-                            <div class="tab1__content">
-                                <div class="tab1__img">
-                                    <img src="./images/cq5dam.web.1280.1280%20(36).webp" alt="">
-                                </div>
-                                <div class="tab1__infor">
-                                    <h3 class="car__name">
-                                        2022 ALL-ELECTRIC TRANSIT
-                                    </h3>
-                                    <p class="car__price">
-                                        Starting at $34,035<span>1</span>
-                                    </p>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="#" class="tab1__link">
-                            <div class="tab1__content">
-                                <div class="tab1__img">
-                                    <img src="./images/cq5dam.web.1280.1280%20(37).webp" alt="">
-                                </div>
-                                <div class="tab1__infor">
-                                    <h3 class="car__name">
-                                        2021 MUSTANG MACH 1
-                                    </h3>
-                                    <p class="car__price">
-                                        Starting at $40,180<span>1</span>
-                                    </p>
-                                </div>
-                            </div>
-                        </a>
-
-                    </div>
-                </div>
+        </div>
+    </header>
+    <section class="carousel">
+        <div class="header__black">
+            <div class="text__content">
+                <p>In a time of hardship and upheaval, one thing is for certain:</p>
+                <p>we remain a family and a company that is stronger together and committed to racial and social justice.</p>
+            </div>
+            <div class="link__content">
+                <a href="#">
+                    <span>Learn More ></span>
+                </a>
+                <a href="#">
+                    <span>Leadership Message ></span>
+                </a>
             </div>
         </div>
+        <div class="carousel__content">
+            <!-- Swiper -->
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="swiper__item">
+                            <a href="">
+                                <img src="./images/cq5dam.web.1440.1440.webp" alt="">
+                            </a>
+                            <div class="items__inside">
+                                <h2>GREAT DEALS ON AMERICA’S BEST-SELLING BRAND.*</h2>
+                                <button>View Offers</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="swiper__item">
+                            <img src="./images/cq5dam.web.1440.1440%20(1).webp" alt="">
+                        </div>
+                    </div>
 
-    </header>
+                </div>
+                <!-- Add Arrows -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+    </section>
+    
     <section class="something">
         <h2>Something for Everyone</h2>
         <h3>See our full lineup of vehicles and find the one that best fits you.</h3>
@@ -851,6 +222,7 @@
                         </a>
                     </div>
                 </div>
+            </div>
             </div>
     </section>
     <section class="airbag">
@@ -1233,14 +605,734 @@
             </div>
         </section>
     </footer>
+    <!-- Modal -->
+<div class="modal" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<!--  <div class="modal-dialog" role="document">-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <ul class="nav nav-tabs">
+                <li class="active"><a href="#tab1" data-toggle="tab">SUVs & Crossovers</a></li>
+                <li><a href="#tab2" data-toggle="tab">Trucks & Vans</a></li>
+                <li><a href="#tab3" data-toggle="tab">Cars</a></li>
+                <li><a href="#tab4" data-toggle="tab">Electrics</a></li>
+                <li><a href="#tab5" data-toggle="tab">Commercial Vehicles</a></li>
+                <li><a href="#tab6" data-toggle="tab">Performance Vehicles</a></li>
+                <li><a href="#tab7" data-toggle="tab">Future Vehicles</a></li>
+            </ul>
+        
+      </div>
+      <div class="modal-body">
+        <div class="tab-content">
+                <div class="tab-pane active" id="tab1">
+                    <a href="#" class="tab1__link">
+                        <div class="tab1__content">
+                            <div class="tab1__img">
+                                <img src="./images/cq5dam.web.1280.1280.webp" alt="">
+                            </div>
+                            <div class="tab1__infor">
+                                <h3 class="car__name">
+                                    2020 ECOSPORT
+                                </h3>
+                                <p class="car__price">
+                                    Starting at $19,995<span>1</span>
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="tab1__link">
+                        <div class="tab1__content">
+                            <div class="tab1__img">
+                                <img src="./images/cq5dam.web.1280.1280%20(1).webp" alt="">
+                            </div>
+                            <div class="tab1__infor">
+                                <h3 class="car__name">
+                                    2020 ESCAPE
+                                </h3>
+                                <p class="car__price">
+                                    Starting at $24,885<span>1</span>
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="tab1__link">
+                        <div class="tab1__content">
+                            <div class="tab1__img">
+                                <img src="./images/cq5dam.web.1280.1280%20(2).webp" alt="">
+                            </div>
+                            <div class="tab1__infor">
+                                <h3 class="car__name">
+                                    2021 BRONCO SPORT
+                                </h3>
+                                <p class="car__price">
+                                    Starting at $26,660<span>1</span>
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="tab1__link">
+                        <div class="tab1__content">
+                            <div class="tab1__img">
+                                <img src="./images/cq5dam.web.1280.1280%20(3).webp" alt="">
+                            </div>
+                            <div class="tab1__infor">
+                                <h3 class="car__name">
+                                    2021 BRONCO
+                                </h3>
+                                <p class="car__price">
+                                    Starting at $28,500<span>1</span>
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="tab1__link">
+                        <div class="tab1__content">
+                            <div class="tab1__img">
+                                <img src="./images/cq5dam.web.1280.1280%20(4).webp" alt="">
+                            </div>
+                            <div class="tab1__infor">
+                                <h3 class="car__name">
+                                    2019 FLEX
+                                </h3>
+                                <p class="car__price">
+                                    Starting at $30,575<span>1</span>
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="tab1__link">
+                        <div class="tab1__content">
+                            <div class="tab1__img">
+                                <img src="./images/cq5dam.web.1280.1280%20(5).webp" alt="">
+                            </div>
+                            <div class="tab1__infor">
+                                <h3 class="car__name">
+                                    2020 EDGE
+                                </h3>
+                                <p class="car__price">
+                                    Starting at $31,100<span>1</span>
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="tab1__link">
+                        <div class="tab1__content">
+                            <div class="tab1__img">
+                                <img src="./images/cq5dam.web.1280.1280%20(6).webp" alt="">
+                            </div>
+                            <div class="tab1__infor">
+                                <h3 class="car__name">
+                                    2020 EXPLOREr
+                                </h3>
+                                <p class="car__price">
+                                    Starting at $32,765<span>1</span>
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="tab1__link">
+                        <div class="tab1__content">
+                            <div class="tab1__img">
+                                <img src="./images/cq5dam.web.1280.1280%20(7).webp" alt="">
+                            </div>
+                            <div class="tab1__infor">
+                                <h3 class="car__name">
+                                    2021 MUSTANG MACH-E
+                                </h3>
+                                <p class="car__price">
+                                    Starting at $43,895<span>1</span>
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="tab1__link">
+                        <div class="tab1__content">
+                            <div class="tab1__img">
+                                <img src="./images/cq5dam.web.1280.1280%20(8).webp" alt="">
+                            </div>
+                            <div class="tab1__infor">
+                                <h3 class="car__name">
+                                    2020 EXPEDITION
+                                </h3>
+                                <p class="car__price">
+                                    Starting at $52,810<span>1</span>
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                </div>             
+                <div class="tab-pane" id="tab2">
+                   <a href="#" class="tab1__link">
+                        <div class="tab1__content">
+                            <div class="tab1__img">
+                                <img src="./images/cq5dam.web.1280.1280%20(10).webp" alt="">
+                            </div>
+                            <div class="tab1__infor">
+                                <h3 class="car__name">
+                                    2020 RANGER
+                                </h3>
+                                <p class="car__price">
+                                    Starting at $24,410<span>1</span>
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="tab1__link">
+                        <div class="tab1__content">
+                            <div class="tab1__img">
+                                <img src="./images/cq5dam.web.1280.1280%20(9).webp" alt="">
+                            </div>
+                            <div class="tab1__infor">
+                                <h3 class="car__name">
+                                    2020 TRANSIT CONNECT
+                                </h3>
+                                <p class="car__price">
+                                    Starting at $27,020<span>1</span>
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="tab1__link">
+                        <div class="tab1__content">
+                            <div class="tab1__img">
+                                <img src="./images/cq5dam.web.1280.1280%20(10).webp" alt="">
+                            </div>
+                            <div class="tab1__infor">
+                                <h3 class="car__name">
+                                    2020 F-150
+                                </h3>
+                                <p class="car__price">
+                                    Starting at $28,745<span>1</span>
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="tab1__link">
+                        <div class="tab1__content">
+                            <div class="tab1__img">
+                                <img src="./images/cq5dam.web.1280.1280%20(11).webp" alt="">
+                            </div>
+                            <div class="tab1__infor">
+                                <h3 class="car__name">
+                                    2020 SUPER DUTY
+                                </h3>
+                                <p class="car__price">
+                                    Starting at $34,035<span>1</span>
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="tab1__link">
+                        <div class="tab1__content">
+                            <div class="tab1__img">
+                                <img src="./images/cq5dam.web.1280.1280%20(12).webp" alt="">
+                            </div>
+                            <div class="tab1__infor">
+                                <h3 class="car__name">
+                                    2020 TRANSIT
+                                </h3>
+                                <p class="car__price">
+                                    Starting at $40,180<span>1</span>
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                    
+                </div>
+                <div class="tab-pane" id="tab3">
+                    <a href="#" class="tab1__link">
+                        <div class="tab1__content">
+                            <div class="tab1__img">
+                                <img src="./images/cq5dam.web.1280.1280%20(13).webp" alt="">
+                            </div>
+                            <div class="tab1__infor">
+                                <h3 class="car__name">
+                                    2020 FUSION
+                                </h3>
+                                <p class="car__price">
+                                    Starting at $23,170<span>1</span>
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="tab1__link">
+                        <div class="tab1__content">
+                            <div class="tab1__img">
+                                <img src="./images/cq5dam.web.1280.1280%20(14).webp" alt="">
+                            </div>
+                            <div class="tab1__infor">
+                                <h3 class="car__name">
+                                    2020 MUSTANG
+                                </h3>
+                                <p class="car__price">
+                                    Starting at $26,670<span>1</span>
+                                </p>
+                            </div>
+                        </div>
+                    </a>         
+                </div>
+                <div class="tab-pane" id="tab4">
+                   <a href="#" class="tab1__link">
+                        <div class="tab1__content">
+                            <div class="tab1__img">
+                                <img src="./images/cq5dam.web.1280.1280%20(7).webp" alt="">
+                            </div>
+                            <div class="tab1__infor">
+                                <h3 class="car__name">
+                                    2021 MUSTANG MACH-E
+                                </h3>
+                                <p class="car__price">
+                                    Starting at $43,890<span>1</span>
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="tab1__link">
+                        <div class="tab1__content">
+                            <div class="tab1__img">
+                                <img src="./images/cq5dam.web.1280.1280%20(15).webp" alt="">
+                            </div>
+                            <div class="tab1__infor">
+                                <h3 class="car__name">
+                                    2020 FUSION HYBRID
+                                </h3>
+                                <p class="car__price">
+                                    Starting at $28,000<span>1</span>
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="tab1__link">
+                        <div class="tab1__content">
+                            <div class="tab1__img">
+                                <img src="./images/cq5dam.web.1280.1280%20(16).webp" alt="">
+                            </div>
+                            <div class="tab1__infor">
+                                <h3 class="car__name">
+                                    2020 FUSION PLUG-IN HYBRID
+                                </h3>
+                                <p class="car__price">
+                                    Starting at $35,005<span>1</span>
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="tab1__link">
+                        <div class="tab1__content">
+                            <div class="tab1__img">
+                                <img src="./images/cq5dam.web.1280.1280%20(17).webp" alt="">
+                            </div>
+                            <div class="tab1__infor">
+                                <h3 class="car__name">
+                                    2020 EXPLORER LIMITED
+                                </h3>
+                                <p class="car__price">
+                                    Starting at $48,385<span>1</span>
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="tab1__link">
+                        <div class="tab1__content">
+                            <div class="tab1__img">
+                                <img src="./images/cq5dam.web.1280.1280%20(18).webp" alt="">
+                            </div>
+                            <div class="tab1__infor">
+                                <h3 class="car__name">
+                                    2020 ESCAPE SE SPORT HYBRID
+                                </h3>
+                                <p class="car__price">
+                                    Starting at $28,260<span>1</span>
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="tab1__link">
+                        <div class="tab1__content">
+                            <div class="tab1__img">
+                                <img src="./images/cq5dam.web.1280.1280%20(18).webp" alt="">
+                            </div>
+                            <div class="tab1__infor">
+                                <h3 class="car__name">
+                                    2020 FORD ESCAPE SE PLUG-IN HYBRID
+                                </h3>
+                                <p class="car__price">
+                                    Starting at $33,040<span>1</span>
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="tab1__link">
+                        <div class="tab1__content">
+                            <div class="tab1__img">
+                                <img src="./images/cq5dam.web.1280.1280%20(19).webp" alt="">
+                            </div>
+                            <div class="tab1__infor">
+                                <h3 class="car__name">
+                                    2020 ESCAPE SEL PLUG-IN HYBRID
+                                </h3>
+                                <p class="car__price">
+                                    Starting at $35,620<span>1</span>
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="tab1__link">
+                        <div class="tab1__content">
+                            <div class="tab1__img">
+                                <img src="./images/cq5dam.web.1280.1280%20(21).webp" alt="">
+                            </div>
+                            <div class="tab1__infor">
+                                <h3 class="car__name">
+                                    2020 ESCAPE TITANIUM HYBRID
+                                </h3>
+                                <p class="car__price">
+                                    Starting at $33,550<span>1</span>
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="tab1__link">
+                        <div class="tab1__content">
+                            <div class="tab1__img">
+                                <img src="./images/cq5dam.web.1280.1280%20(22).webp" alt="">
+                            </div>
+                            <div class="tab1__infor">
+                                <h3 class="car__name">
+                                    2020 ESCAPE TITANIUM PLUG-IN HYBRID
+                                </h3>
+                                <p class="car__price">
+                                    Starting at $38,830<span>1</span>
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                    
+                </div>
+                <div class="tab-pane" id="tab5">
+                   <a href="#" class="tab1__link">
+                        <div class="tab1__content">
+                            <div class="tab1__img">
+                                <img src="./images/cq5dam.web.1280.1280%20(23).webp" alt="">
+                            </div>
+                            <div class="tab1__infor">
+                                <h3 class="car__name">
+                                    2020 TRANSIT CONNECT
+                                </h3>
+                                <p class="car__price">
+                                    Starting at $24,410<span>1</span>
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="tab1__link">
+                        <div class="tab1__content">
+                            <div class="tab1__img">
+                                <img src="./images/cq5dam.web.1280.1280%20(24).webp" alt="">
+                            </div>
+                            <div class="tab1__infor">
+                                <h3 class="car__name">
+                                    2020-2021 STRIPPED CHASSIS
+                                </h3>
+                                <p class="car__price">
+                                    Starting at $27,020<span>1</span>
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="tab1__link">
+                        <div class="tab1__content">
+                            <div class="tab1__img">
+                                <img src="./images/cq5dam.web.1280.1280%20(25).webp" alt="">
+                            </div>
+                            <div class="tab1__infor">
+                                <h3 class="car__name">
+                                    2020 TRANSIT CC-CA
+                                </h3>
+                                <p class="car__price">
+                                    Starting at $28,745<span>1</span>
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="tab1__link">
+                        <div class="tab1__content">
+                            <div class="tab1__img">
+                                <img src="./images/cq5dam.web.1280.1280%20(26).webp" alt="">
+                            </div>
+                            <div class="tab1__infor">
+                                <h3 class="car__name">
+                                    2021 E-SERIES CUTAWAY
+                                </h3>
+                                <p class="car__price">
+                                    Starting at $34,035<span>1</span>
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="tab1__link">
+                        <div class="tab1__content">
+                            <div class="tab1__img">
+                                <img src="./images/cq5dam.web.1280.1280%20(27).webp" alt="">
+                            </div>
+                            <div class="tab1__infor">
+                                <h3 class="car__name">
+                                    2020 SUPER DUTY
+                                </h3>
+                                <p class="car__price">
+                                    Starting at $40,180<span>1</span>
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="tab1__link">
+                        <div class="tab1__content">
+                            <div class="tab1__img">
+                                <img src="./images/cq5dam.web.1280.1280%20(28).webp" alt="">
+                            </div>
+                            <div class="tab1__infor">
+                                <h3 class="car__name">
+                                    2020 TRANSIT
+                                </h3>
+                                <p class="car__price">
+                                    Starting at $40,180<span>1</span>
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="tab1__link">
+                        <div class="tab1__content">
+                            <div class="tab1__img">
+                                <img src="./images/cq5dam.web.1280.1280%20(29).webp" alt="">
+                            </div>
+                            <div class="tab1__infor">
+                                <h3 class="car__name">
+                                    2020 CHASSIS CAB
+                                </h3>
+                                <p class="car__price">
+                                    Starting at $40,180<span>1</span>
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="tab1__link">
+                        <div class="tab1__content">
+                            <div class="tab1__img">
+                                <img src="./images/cq5dam.web.1280.1280%20(30).webp" alt="">
+                            </div>
+                            <div class="tab1__infor">
+                                <h3 class="car__name">
+                                    2021 F-650 F-750
+                                </h3>
+                                <p class="car__price">
+                                    Starting at $40,180<span>1</span>
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                    
+                </div>
+                <div class="tab-pane" id="tab6">
+                   <a href="#" class="tab1__link">
+                        <div class="tab1__content">
+                            <div class="tab1__img">
+                                <img src="./images/cq5dam.web.1280.1280%20(5).webp" alt="">
+                            </div>
+                            <div class="tab1__infor">
+                                <h3 class="car__name">
+                                    2020 EDGE ST
+                                </h3>
+                                <p class="car__price">
+                                    Starting at $43,260<span>1</span>
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="tab1__link">
+                        <div class="tab1__content">
+                            <div class="tab1__img">
+                                <img src="./images/cq5dam.web.1280.1280%20(31).webp" alt="">
+                            </div>
+                            <div class="tab1__infor">
+                                <h3 class="car__name">
+                                    2020 F-150 RAPTOR
+                                </h3>
+                                <p class="car__price">
+                                    Starting at $53,450<span>1</span>
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="tab1__link">
+                        <div class="tab1__content">
+                            <div class="tab1__img">
+                                <img src="./images/cq5dam.web.1280.1280%20(32).webp" alt="">
+                            </div>
+                            <div class="tab1__infor">
+                                <h3 class="car__name">
+                                    FORD GT
+                                </h3>
+                                <p class="car__price">
+                                    
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="tab1__link">
+                        <div class="tab1__content">
+                            <div class="tab1__img">
+                                <img src="./images/cq5dam.web.1280.1280%20(33).webp" alt="">
+                            </div>
+                            <div class="tab1__infor">
+                                <h3 class="car__name">
+                                    FORD GT MK II
+                                </h3>
+                                <p class="car__price">
+                                    
+                                </p>
+                            </div>
+
+                        </div>
+                    </a>
+                    <a href="#" class="tab1__link">
+                        <div class="tab1__content">
+                            <div class="tab1__img">
+                                <img src="./images/cq5dam.web.1280.1280%20(34).webp" alt="">
+                            </div>
+                            <div class="tab1__infor">
+                                <h3 class="car__name">
+                                    2020 MUSTANG SHELBY GT350®
+                                </h3>
+                                <p class="car__price">
+                                    Starting at $60,440<span>1</span>
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="tab1__link">
+                        <div class="tab1__content">
+                            <div class="tab1__img">
+                                <img src="./images/cq5dam.web.1280.1280%20(35).webp" alt="">
+                            </div>
+                            <div class="tab1__infor">
+                                <h3 class="car__name">
+                                    2020 MUSTANG SHELBY® GT500®
+                                </h3>
+                                <p class="car__price">
+                                    Starting at $72,900<span>1</span>
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                    
+                </div>
+                <div class="tab-pane" id="tab7">
+                   <a href="#" class="tab1__link">
+                        <div class="tab1__content">
+                            <div class="tab1__img">
+                                <img src="./images/cq5dam.web.1280.1280%20(2).webp" alt="">
+                            </div>
+                            <div class="tab1__infor">
+                                <h3 class="car__name">
+                                    2021 BRONCO SPORT
+                                </h3>
+                                <p class="car__price">
+                                    Starting at $24,410<span>1</span>
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="tab1__link">
+                        <div class="tab1__content">
+                            <div class="tab1__img">
+                                <img src="./images/cq5dam.web.1280.1280%20(3).webp" alt="">
+                            </div>
+                            <div class="tab1__infor">
+                                <h3 class="car__name">
+                                    2021 BRONCO
+                                </h3>
+                                <p class="car__price">
+                                    Starting at $27,020<span>1</span>
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="tab1__link">
+                        <div class="tab1__content">
+                            <div class="tab1__img">
+                                <img src="./images/cq5dam.web.1280.1280%20(7).webp" alt="">
+                            </div>
+                            <div class="tab1__infor">
+                                <h3 class="car__name">
+                                    2021 MUSTANG MACH-E
+                                </h3>
+                                <p class="car__price">
+                                    Starting at $28,745<span>1</span>
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="tab1__link">
+                        <div class="tab1__content">
+                            <div class="tab1__img">
+                                <img src="./images/cq5dam.web.1280.1280%20(36).webp" alt="">
+                            </div>
+                            <div class="tab1__infor">
+                                <h3 class="car__name">
+                                    2022 ALL-ELECTRIC TRANSIT
+                                </h3>
+                                <p class="car__price">
+                                    Starting at $34,035<span>1</span>
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="tab1__link">
+                        <div class="tab1__content">
+                            <div class="tab1__img">
+                                <img src="./images/cq5dam.web.1280.1280%20(37).webp" alt="">
+                            </div>
+                            <div class="tab1__infor">
+                                <h3 class="car__name">
+                                    2021 MUSTANG MACH 1
+                                </h3>
+                                <p class="car__price">
+                                    Starting at $40,180<span>1</span>
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                    
+                </div>
+            </div>
+            <div class="modal-footer">
+        <button type="button" class="">Certified Pre-Owned</button>
+        <button type="button" class="">Explore All Vehicles</button>
+        <button type="button" class="">Explore Fuel Choices</button>
+      </div>
+      </div>
+      
+    </div>
+<!--  </div>-->
+</div>
+
 
     <!-- Thư viện hỗ trợ jquery -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-
+    <!--    SwiperJS-->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <!-- BS4 JS -->
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
     <script src="./js/main.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+
+    </script>
 
 </body>
 
