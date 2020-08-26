@@ -1,0 +1,12 @@
+.info{
+    .info__content{
+        text-align: center;
+        @include styleText(#333,"75%",$fw-normal);
+        p{
+            margin: 0;
+            a{
+                text-decoration-line: underline;
+            }
+        }
+    }
+}

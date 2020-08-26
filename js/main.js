@@ -16,10 +16,12 @@ getEID("nav__1").addEventListener("click", function () {
 var lastView = true;
 getEID("disclosures__click").addEventListener("click", function () {
   if (lastView == false) {
+    $("#disclosures__text1").attr("style", "transition: all 0.25s");
     getEID("disclosures__text1").style.display = "none";
     getEID("disclosures__icon").className = "fa fa-chevron-down";
     lastView = true;
-  } else if (lastView) {
+  } else if (lastView) {   
+    $("#disclosures__text1").attr("style", "transition: all 0.25s");
     $("#disclosures__text1").attr("style", "display: block");
     getEID("disclosures__icon").className = "fa fa-chevron-down open";
     lastView = false;

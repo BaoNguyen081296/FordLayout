@@ -1,1 +1,34 @@
 // Dùng để chỉnh trực tiếp class của thư viện
+
+.carousel {
+    .carousel__content {
+        .swiper-container {
+            .swiper-button-prev,
+            .swiper-button-next,
+            {
+                background-color: $clr-gray-8;
+                color: $clr-white-0;
+                height: 70px;
+                width: 70px;
+            }
+            .swiper-button-prev {
+                left: 0;
+                &:hover {
+                    border: 1px solid #2096cd;
+                    border-left: 0;
+                    background-color: $color-white-0;
+                    color:$color-blue;
+                }
+            }
+            .swiper-button-next {
+                right: 0;
+                &:hover {
+                    border: 1px solid #2096cd;
+                    border-right: 0;
+                    background-color: $color-white-0;
+                    color:$color-blue;
+                }
+            }
+        }
+    }
+}

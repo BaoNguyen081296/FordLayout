@@ -1,0 +1,28 @@
+.promise {
+    .promise__content {
+        text-align: center;
+        background-color: $color-blue;
+        padding: 20px 20px 30px 20px;
+        h2 {
+            @include styleText($color-white-0, 30px, $fw-bold-1 + 200);
+            margin: 40px 0 10px;
+        }
+        .promise__span {
+            span {
+                line-height: 1.5;
+                @include styleText($color-white-0, $fs-0 + 1, $fw-normal);
+            }
+            height: 80px;
+            margin-bottom: 2rem;
+            padding-top: 10px;
+        }
+        button {
+            max-width: 250px;
+            width: 100%;
+            margin: auto;
+        }
+        .promise__column {
+            margin-bottom: 20px;
+        }
+    }
+}

@@ -1,0 +1,53 @@
+.pickUp{
+    .pickUp__content{
+        width: 90%;
+        margin:auto;
+        text-align: center;
+        h1{
+            margin: 20px 0 10px;
+            @include styleText(#333,$fs-4 + 2,$fw-bold-0 - 100);
+        }
+        .pickUp__img{
+            img{
+               
+                display: block;
+                width: 100%;
+                height: 100%;
+                max-width: 330px;
+                margin: auto;
+            }
+        }
+        .pickUp__btn{          
+            a{
+                max-width: 330px;
+                width: 100%;
+                margin:auto;
+                display: inline-block;
+            }
+            margin-bottom: 30px;
+        }
+        h3{
+            margin: 15px 0;
+            @include styleText($color-blue,$fs-2,$fw-normal);
+            span{
+                font-weight: bold; 
+            }
+        }
+        h6{
+            @include styleText($color-black-0,$fs-1,$fw-normal);
+            margin-bottom: 20px;
+            cursor: default;
+        }
+        p{
+            a{
+                @include styleText($color-blue,$fs-0 + 1 , $fw-normal);
+                &:hover{
+                    color:$color-black-btn-0;
+                }
+                i{
+                    margin-left: 20px;
+                }
+            }
+        }
+    }
+}

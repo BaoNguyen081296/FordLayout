@@ -2,6 +2,7 @@
     @include styleButton($color-blue,$color-gray-2,$pd-1 + 5, $pd-1 + 5);
     @include styleText($color-white-0,$fs-0 + 1,$fw-normal);
     text-align:center;
+    margin-top:10px;
     &:hover{
         text-decoration: none;
         @include styeHoverButton($color-white-0,$color-black-btn-0,$color-black-btn-0);

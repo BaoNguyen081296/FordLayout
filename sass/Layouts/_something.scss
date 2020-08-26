@@ -1,0 +1,15 @@
+.something {
+    text-align: center;
+    h2 {
+        margin-top: 20px;
+        margin-bottom: 10px;
+        @include styleText(#333, $fs-4 + 2, $fw-normal);
+    }
+    h3 {
+        font-size: 16px;
+    }
+    .ford-btnBlue {
+        margin: 3rem auto 0;
+        padding: 15px 80px !important;
+    }
+}

@@ -28,6 +28,7 @@
         }
     }
     .disclosures__text {
+        transition: all 0.25s;
         background-color: $color-gray-5;
         padding-top: 40px;
         padding-bottom: 40px;
@@ -35,15 +36,16 @@
         overflow-y: scroll;
         margin: 10px 0;
         display: none;
-        transition: all 0.2s ease !important;
+        
         ul {
-            transition: all 0.2s ease !important;
+            transition: all 0.25s;
             padding-left: 45px;
             padding-right: 45px;
             overflow: hidden;
             @include styleText(#333, $fs-1 + 1, $fw-normal);
             list-style: none;
             li {
+                transition: all 0.25s;
                 @include styleText(#333, $fs-1 - 1, $fw-normal);
                 margin-bottom: 10px;
                 transition: all 0.2s ease !important;

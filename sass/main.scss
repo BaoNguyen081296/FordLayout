@@ -1,15 +1,20 @@
-//Base
-@import './Base/reset';
-
 //Helper
 @import './Helper/variables';
 @import './Helper/mixin';
+//Base
+@import './Base/reset';
+@import "./Base/normalized";
 //Components
+
 @import './Components/button';
 @import './Components/modal';
 //Layouts
 
 @import "./Layouts/genaralImage";
+@import "./Layouts/promise";
+@import "./Layouts/info";
+@import "./Layouts/pickUp";
+@import "./Layouts/something";
 @import "./Layouts/gallery";
 @import "./Layouts/summer";
 @import './Layouts/airbag';
