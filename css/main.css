@@ -260,12 +260,13 @@ a {
         color: #0276b3; }
 .gallery .gallery__content .gallery__itemMini {
   overflow: hidden;
-  transition: all 0.5s linear !important;
+  transition: all 0.5s !important;
   position: relative; }
   .gallery .gallery__content .gallery__itemMini img {
     display: block;
     width: 100%;
-    height: 100%; }
+    height: 100%;
+    -webkit-transition: all .3s; }
   .gallery .gallery__content .gallery__itemMini:hover img {
     transition: all 0.5s !important;
     transform: scale(1.1); }
