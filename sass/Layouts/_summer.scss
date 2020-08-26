@@ -1,13 +1,16 @@
 .summer{
     
     .summer__content{
-        background-image: url(../../images/summerSale.webp);
+        background-image: url(../images/summerSale.webp);
         height: 400px;
         background-repeat: no-repeat;
         background-size:cover;
         background-position: center center;
         position: relative;
         text-align: center;
+        color: #0276b3;
+        font-size: 16px;
+        line-height: 1.2;
         .summer__text{
             position: absolute;
             bottom: 50px;

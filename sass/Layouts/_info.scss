@@ -4,9 +4,16 @@
         @include styleText(#333,"75%",$fw-normal);
         p{
             margin: 0;
+            margin-top: 22px;
+            padding: 2px;
+            font-size: 80%;
+            letter-spacing: 1px;
+            font-weight: 300;
+            line-height: 20px;
             a{
                 text-decoration-line: underline;
             }
+            
         }
     }
 }

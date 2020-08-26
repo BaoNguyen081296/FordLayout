@@ -20,14 +20,15 @@
     /* Fallback color */
     background-color: rgba(0, 0, 0, 0.4);
     /* Black w/ opacity */
-    -webkit-animation-name: animatetop;
-    -webkit-animation-duration: 0.4s;
-    animation-name: animatetop;
-    animation-duration: 0.4s;
+    //    -webkit-animation-name: animatetop;
+    //    -webkit-animation-duration: 0.4s;
+    //    animation-name: animatetop;
+    //    animation-duration: 0.4s;
+
 }
 
 //#myModal.show{
-//
+//    
 //}
 
 /* Modal Content */
@@ -39,35 +40,36 @@
     padding-top: 128px;
     border: 1px solid #888;
     width: 100%;
+    height: auto;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     -webkit-animation-name: animatetop;
     -webkit-animation-duration: 0.4s;
     animation-name: animatetop;
-    animation-duration: 0.4s;
+    animation-duration: 0.4s
 }
 
 /* Add Animation */
 @-webkit-keyframes animatetop {
     from {
         top: -300px;
-        opacity: 0;
+        opacity: 0
     }
 
     to {
         top: 0;
-        opacity: 1;
+        opacity: 1
     }
 }
 
 @keyframes animatetop {
     from {
         top: -300px;
-        opacity: 0;
+        opacity: 0
     }
 
     to {
         top: 0;
-        opacity: 1;
+        opacity: 1
     }
 }
 
@@ -96,15 +98,59 @@
     .nav {
         //        width: 100%;
         border-bottom: none;
+        position: relative;
 
         li {
             margin-right: 20px;
 
             a {
-                color: #102b4e;
+                position: relative;
+                color: #2d96cd;
                 text-align: center;
                 padding-bottom: 25px;
                 padding-top: 25px;
+                border-bottom: none;
+                //                padding-left: 10px;
+                //                padding-right: 10px;
+                transition: all 0.5s;
+
+                &::after {
+                    position: absolute;
+                    display: block;
+                    content: '';
+                    bottom: -2px;
+                    left: 0;
+                    z-index: 5;
+                    width: 0;
+                    opacity: 0;
+                    height: 4px;
+                    background-color: #2d96cd;
+                    transition: all 0.5s;
+                }
+
+                //102b4e
+                &:hover::after {
+                    width: 100%;
+                    opacity: 1;
+                    transition: all 0.5s;
+
+                }
+
+
+            }
+
+            .active::after {
+                width: 100%;
+                opacity: 1;
+                background-color: #102b4e;
+
+            }
+
+            .active {
+                color: #102b4e;
+                //                border: 1px solid #102b4e;
+                //                
+                //                border-top: none;
             }
         }
     }
@@ -117,8 +163,10 @@
     max-height: 440px;
 
     .tab-content {
+
         padding-left: 25px;
         padding-right: 25px;
+
         .tab-pane {
             .tab1__content {
                 padding: 25px 20px;
@@ -144,8 +192,7 @@
                     font-size: 14px;
                     color: #555;
 
-                    span {
-                    }
+                    span {}
                 }
             }
         }
@@ -163,6 +210,7 @@
 
 .modal-footer {
     max-height: 191px;
+//    max-height: 270px;
     display: flex;
     justify-content: center;
 
@@ -179,11 +227,12 @@
 
 .modal-backdrop.show {
     z-index: 1;
+
 }
 
 .modal-open {
     overflow-y: scroll;
-    padding-right: 0px !important;
+    padding-right: 0 !Important;
 }
 
 @media (max-width: 1200px) {
@@ -196,6 +245,35 @@
         }
     }
 }
+
+@media (max-width: 1002px) {
+    .modal-header {
+        height: 100px;
+        .nav {
+            li {
+                a {
+                    padding: 0;
+                    &::after {
+                    display: none;
+                }
+                &:hover::after {
+                    width: 0;
+                    opacity: 0;
+
+                }
+            }
+
+            .active::after {
+                width: 0;
+                opacity: 0;
+
+            }
+                
+            }
+        }
+    }
+}
+
 @media (max-width: 820px) {
     .modal-body {
         .tab-content {
@@ -206,6 +284,7 @@
         }
     }
 }
+
 @media (max-width: 645px) {
     .modal-body {
         .tab-content {
