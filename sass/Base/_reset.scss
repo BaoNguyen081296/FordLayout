@@ -16,4 +16,7 @@ a{
     background-color: transparent;
     font-weight: 400;
     text-decoration: none;
+    &:hover{
+        text-decoration: none;
+    }
 }
